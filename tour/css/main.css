@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+#lamtour{
+    justify-content: center;
+}
+.nut{
+    position:fixed;
+    top:20%;
+    left: 20%;
+    right: 20%;
+
+}
+.fl{
+    position:absolute;
+    top: 10%;
+  
+    
+}
+
+.bg-dark{
+    background-color: pink !important;
+}
+body{
+    background-color: ;
+}

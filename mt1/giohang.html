@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <title>Giỏ hàng</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="container-xxl">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng</li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-titile--no-pointer">Kết nối</span>
+                            <a href="http://www.facebook.com/" class="header__navbar-icon-link"><i
+                                    class="header__navbar-icon fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" class="header__navbar-icon-link"><i
+                                    class="header__navbar-icon fa-brands fa-instagram"></i></a>
+
+                        </li>
+
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="trangchu.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-house"></i>
+                                Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="sanpham.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-basket-shopping"></i>
+                                Sản phẩm</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="gioithieu.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-info"></i>
+                                Giới thiệu</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="dangky.html" class="header__navbar-item-link header__navbar-item--separate">Đăng
+                                ký</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="dangnhap.html" class="header__navbar-item-link">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="trangchu.html" class="header__logo-link"><img class="header__logo-img"
+                                src="./assets/img/logo.png" alt=""></a>
+                    </div>
+                    <div class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Nhập để tìm sản phẩm">
+                        <button type="submit" class="header__search-btn"><i
+                                class="header__search-btn-icon fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="header__cart">
+                        <a href="./giohang.html">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table id="cart" class="container border table">
+            <thead class="text-start bg-danger">
+                <tr>
+                    <th>STT</th>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Xóa sản phẩm</th>
+                </tr>
+            </thead>
+            <tbody class="text-start">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Tổng tiền:</td>
+                    <td class="total-price"></td>
+                </tr>
+                <tr>
+                    <td colspan="5" id="Sent" class="text-center"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <footer class="footer"></footer>
+    </div>
+    <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <script src="./assets/javascript/scrip.js"></script>
+</body>
+
+</html>

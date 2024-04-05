@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <title>Giới Thiệu</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-moto.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="app">
+        <div class="header position-fixed top-0 start-0 end-0 z-3">
+            <div class="container-xxl">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng</li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-titile--no-pointer">Kết nối</span>
+                            <a href="http://www.facebook.com/" class="header__navbar-icon-link"><i
+                                    class="header__navbar-icon fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" class="header__navbar-icon-link"><i
+                                    class="header__navbar-icon fa-brands fa-instagram"></i></a>
+
+                        </li>
+
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="trangchu.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-house"></i>
+                                Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="sanpham.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Sản phẩm</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="gioithieu.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-info"></i>
+                                Giới thiệu</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="lienhe.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-file-contract"></i>
+                                Liên hệ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="dangky.html" class="header__navbar-item-link header__navbar-item--separate">Đăng
+                                ký</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="dangnhap.html" class="header__navbar-item-link">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="trangchu.html" class="header__logo-link"><img class="header__logo-img"
+                                src="./assets/img/logo.png" alt=""></a>
+                    </div>
+                    <form action="timkiem.html" method="get" onsubmit="return search()">
+                        <div class="header__search">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm sản phẩm">
+                            <button type="submit" class="header__search-btn"><i
+                                    class="header__search-btn-icon fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <div class="header__cart">
+                        <a href="./giohang.html">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl mt-110">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="trangchu.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Giới thiệu</li>
+                </ol>
+                <h2>Giới Thiệu</h2>
+                <hr>
+            </nav>
+            <div class="row">
+                <div class="info__page-left col-2">
+                    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4 fw-bold bg-danger text-white"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Giới thiệu Motohub
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <ul class="list list-group list-group-numbered">
+                                    <li class="list-group-item"><a class="text-decoration-none text-black" class=""
+                                            href="#MotoHub-1">MotoHub Việt Nam</a></li>
+                                    <li class="list-group-item"><a class="text-decoration-none text-black"
+                                            href="#MotoHub-2">MotoHub Xe Máy</a> </li>
+                                    <li class="list-group-item"><a class="text-decoration-none text-black"
+                                            href="http://">MotoHub Ô tô</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4 fw-bold bg-danger text-white"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Lịch sử phát triển
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <ul class="list list-group list-group-numbered">
+                                    <li class="list-group-item"><a class="text-decoration-none text-black" class=""
+                                            href="http://">2011 - nay</a></li>
+                                    <li class="list-group-item"><a class="text-decoration-none text-black"
+                                            href="http://">2001 - 2010</a> </li>
+                                    <li class="list-group-item"><a class="text-decoration-none text-black"
+                                            href="http://">1996 - 2000</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="info__page-right col-10">
+                    <div class="ifo__page-right--container">
+                        <h1 class="heading__info text-danger fw-bold" id="MotoHub-1">MotoHub</h1>
+                        <div class="row">
+                            <div class="info__page-right__right col-8 fs-4">
+                                <p>Được thành lập vào năm 1996, công ty Honda Việt Nam là liên doanh giữa Công ty Honda
+                                    Motor
+                                    (Nhật Bản), Công ty Asian Honda Motor (Thái Lan) và Tổng Công ty Máy Động Lực và Máy
+                                    Nông
+                                    nghiệp Việt Nam với 2 ngành sản phẩm chính: xe máy và xe ô tô. Gần 30 năm có mặt tại
+                                    Việt
+                                    Nam, Honda Việt Nam đã không ngừng phát triển và trở thành một trong những công ty
+                                    dẫn
+                                    đầu
+                                    trong lĩnh vực sản xuất xe gắn máy và nhà sản xuất ô tô uy tín tại thị trường Việt
+                                    Nam.</p>
+                                <p>Honda Việt Nam tự hào mang đến cho khách hàng những sản phẩm chất lượng cao, dịch vụ
+                                    tận
+                                    tâm
+                                    và những đóng góp vì một xã hội giao thông lành mạnh. Với khẩu hiệu “Sức mạnh của
+                                    những
+                                    Ước
+                                    mơ”, Honda mong muốn được chia sẻ và cùng mọi người thực hiện ước mơ thông qua việc
+                                    tạo
+                                    thêm
+                                    ra nhiều niềm vui mới cho người dân và xã hội.</p>
+                            </div>
+                            <div class="info__page-right__left col-4">
+                                <a href="" class="info__page-right__left-img"><img class="w-75"
+                                        src="./assets/img/Carousel/info-page.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="qsq">
+                        <h1 class="heading__info text-danger fw-bold" id="MotoHub-2">MotoHub Xe Máy</h1>
+                        <div class="row">
+                            <div class="info__page-right__right col-8 fs-4">
+                                <p> Hiểu rõ xe máy là phương tiện đi lại quan trọng và chủ yếu tại Việt Nam, Honda Việt
+                                    Nam
+                                    luôn nỗ lực hết mình cung cấp cho khách hàng những sản phẩm xe máy có chất lượng cao
+                                    nhất với giá cả hợp lý được sản xuất từ những nhà máy thân thiện với môi trường.</p>
+                                <p>Kể từ khi Honda bước chân vào thị trường Việt Nam, công ty đã liên tục đầu tư xây
+                                    dựng
+                                    cơ sở hạ tầng sản xuất nhằm đáp ứng nhu cầu ngày càng tăng cao của thị trường – nơi
+                                    xe
+                                    máy là phương tiện chiếm gần 90% tại các thành phố lớn. Tính đến nay, Honda Việt Nam
+                                    có
+                                    6 nhà máy sản xuất và lắp ráp xe máy và phụ tùng xe máy.</p>
+                            </div>
+                            <div class="info__page-right__left col-4">
+                                <a href="" class="info__page-right__left-img"><img class="w-75"
+                                        src="./assets/img/Carousel/info-page-2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer border-top bg-secondary-subtle">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-3">
+                    <h4>Chăm sóc khách hàng</h4>
+                    <ul class="footer__content">
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Trung
+                                tâm trợ giúp</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Thanh Toán</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Vận Chuyển</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Trả Hàng & Hoàn Tiền</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Chính Sách Bảo Hành</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Về chúng tôi</h4>
+                    <ul class="footer__content">
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Trang chủ</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Giới thiệu</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Sản phẩm</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Tin mới nhất</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Câu hỏi thường gặp</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Chăm sóc khách hàng</h4>
+                    <ul class="footer__content">
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Trung
+                                tâm trợ giúp</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Thanh Toán</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Vận Chuyển</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Trả Hàng & Hoàn Tiền</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Chính Sách Bảo Hành</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Chăm sóc khách hàng</h4>
+                    <ul class="footer__content">
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Trung
+                                tâm trợ giúp</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Thanh Toán</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Vận Chuyển</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Trả Hàng & Hoàn Tiền</a>
+                        </li>
+                        <li class="footer__content-item list-unstyled my-3"><a href=""
+                                class="text-decoration-none text-black">Chính Sách Bảo Hành</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <h3>Công ty Motohub Việt Nam</h3>
+                    <p class="m-0">Số GCNĐKDN: 2500150543</p>
+                    <p class="m-0">Đăng ký lần đầu: Ngày 26/6/2008</p>
+                    <p class="m-0"> Đăng ký thay đổi lần thứ 14: Ngày 03/4/2023.</p>
+                    <p class="m-0">Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở Kế hoạch và Đầu tư Vĩnh Phúc
+                        Địa chỉ: Phường Phúc Thắng, Thành Phố Phúc Yên, Tỉnh Vĩnh Phúc, Việt Nam</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>NHẬN TIN KHUYẾN MÃI</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control p-3" placeholder="Nhập email của bạn"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <button class="input-group-text bg-danger" id="basic-addon2">Đăng ký</button>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="" class="fs-1 me-3 footer-icon-link"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="" class="fs-1 me-3 footer-icon-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="fs-1 me-3 text-danger footer-icon-link"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="" class="fs-1 me-3 footer-icon-link"> <i class="fa-brands fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-md-around">
+                <div class="col-md-6">
+                    <p>© 2023. Copyright by MotoHub VietNam</p>
+                </div>
+                <div class="col-md-6">
+                    <span class="me-3"><a href="">Terms and Conditions </a></span>
+                    <span class="me-3"><a href="">Privacy Policy </a></span>
+                    <span class="me-3"><a href="">Cookie Policy </a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <script src="./assets/javascript/scrip.js"></script>
+</body>
+
+</html>

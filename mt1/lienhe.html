@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <title>Liên hệ</title>
+</head>
+
+<body>
+    <div class="app position-relative">
+        <div class="header position-fixed top-0 start-0 end-0 z-3 ">
+            <div class="container-xxl">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng</li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-titile--no-pointer">Kết nối</span>
+                            <a href="http://www.facebook.com/" class="header__navbar-icon-link"><i
+                                    class="header__navbar-icon fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" class="header__navbar-icon-link"><i
+                                    class="header__navbar-icon fa-brands fa-instagram"></i></a>
+
+                        </li>
+
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="trangchu.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-house"></i>
+                                Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="sanpham.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Sản phẩm</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="gioithieu.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-info"></i>
+                                Giới thiệu</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="lienhe.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-file-contract"></i>
+                                Liên hệ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="dangky.html" class="header__navbar-item-link header__navbar-item--separate">Đăng
+                                ký</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="dangnhap.html" class="header__navbar-item-link">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="trangchu.html" class="header__logo-link"><img class="header__logo-img"
+                                src="/assets/img/logo.png" alt=""></a>
+                    </div>
+                    <form action="timkiem.html" method="get" onsubmit="return search()">
+                        <div class="header__search">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm sản phẩm">
+                            <button type="submit" class="header__search-btn"><i
+                                    class="header__search-btn-icon fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <div class="header__cart">
+                        <a href="./giohang.html">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl mt-110">
+            <div class="breadscrumb-custom container mb-4 box-area" id="container">
+                <div class="row d-none d-lg-block app-breadscrumb mb-3  ">
+                    <a class="app-parent" href="/">Trang chủ</a>
+                    <span class="app-arrow">❯</span>
+                    <a class="app-current">Liên hệ</a>
+
+                </div>
+                <h3 class="inforTiltle " ;>Thông tin liên hệ</h3>
+            </div>
+            <div class="container-fluid w-75" style="text-align: left;">
+                <div class=" row row-cols-1 row-cols-md-4 g-4 ">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body shadow border-0">
+                                <h5 class="card-title">TRỤ SỞ CHÍNH</h5>
+                                <br>
+                                <p class="card-text">Phường Phúc Thắng, thành phố Phúc Yên, tỉnh Vĩnh Phúc</p>
+                                <p class="card-text">
+                                    <br>
+                                    Tel: (84) 211-3868888
+                                    <br>
+                                    Fax: (84) 211-3868910
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+
+                            <div class="card-body shadow border-0">
+                                <h5 class="card-title">CHI NHÁNH TẠI TP HỒ CHÍ MINH</h5>
+                                <p class="card-text">Tầng 8, Zen Plaza, 54-56 đường Nguyễn Trãi, quận 1, thành phố Hồ
+                                    Chí
+                                    Minh</p>
+                                <p class="card-text">
+                                    Tel: (84) 28-39256949
+                                    <br>
+                                    Fax: (84) 28-39256948
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body shadow border-0">
+                                <h5 class="card-title">VĂN PHÒNG ĐẠI DIỆN TẠI HÀ NỘI</h5>
+                                <p class="card-text">Số 1. đường Thái Hà, quận Đống Đa, thành phố Hà Nội</p>
+                                <br>
+                                <p class="card-text">
+                                    Tel: (84) 24-62567567
+                                    <br>
+                                    Fax: (84) 24-38360001
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+
+                            <div class="card-body shadow border-0">
+                                <h5 class="card-title">CHI NHÁNH TẠI HÀ NAM</h5>
+                                <p class="card-text">Khu công nghiệp Đồng Văn II, huyện Duy Tiên, tỉnh Hà Nam</p>
+                                <p class="card-text">
+                                    <br>
+                                    Tel: (84) 226-39666666
+                                    <br>
+                                    Fax: (84) 226-3572666
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center align-items-center my-5">
+                <div class="row box-area">
+                    <div class="container rounder-5 p-2 bg-white box-area">
+                        <div class="w-100" style="text-align: justify;">
+                            <p class="mb-3 " id="note">
+                                <strong>Điền vào mẫu bên dưới để chúng tôi giải đáp thắc mắc của Quý khách sớm
+                                    nhất</strong>
+                            </p>
+                            <p>
+                                <strong>
+                                    <i>
+                                        Bằng việc cung cấp thông tin cho MotoHub Việt Nam, Quý khách đồng ý với
+                                        <a href="/">Chính Sách Riêng Tư</a>
+                                        của MotoHub Việt Nam tại website:
+                                        <a href="trangchu.html"> Xe Máy Điện</a>
+                                        , theo đó cho phép chúng tôi và các bên liên quan xử lý dữ liệu cá nhân của Quý
+                                        khách
+                                        cho các mục đích như: giải đáp thắc mắc, thực hiện khảo sát. Nếu Quý khách không
+                                        đồng ý
+                                        hoặc có ý kiến nào khác, vui lòng thông tin lại với chúng tôi.
+                                    </i>
+                                </strong>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box bg-danger"
+                        style="border-radius: 50px 10px 50px 10px;">
+                        <div class="featured-image mb-3">
+                            <img src="./assets/img/log-regis/background-contact.png" class="img-fluid"
+                                style="width: 375px;">
+                        </div>
+                        <p class="text-white fs-2"
+                            style="font-family:'Courier New', Courier, monospace; font-weight: 600">
+                            Liên
+                            Hệ</p>
+                        <small class="text-white text-wrap text-center"
+                            style="width: 17rem; font-family:'Courier New', Courier, monospace;">Điền vào thông tin bên
+                            phải</small>
+                    </div>
+                    <!--------------------->
+                    <div class="col-md-6 right-box">
+                        <form onsubmit="return contact()">
+                            <div class="row align-items-center">
+                                <div class="header-text mb-3">
+                                    <p class="text-center"
+                                        style="font-family: 'Courier New', Courier, monospace; font-weight: 550; font-size: 25px;">
+                                        Contact US</p>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="email" type="text" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="Email">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="address" type="text" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="Địa chỉ">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="fullname" type="text" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="Họ và tên">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <select id="sex" class="form-select form-select-lg bg-light fs-6"
+                                        aria-label=".form-select-lg example">
+                                        <option value="0">Giới tính</option>
+                                        <option value="1">Nam</option>
+                                        <option value="2">Nữ</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <select id="get-ct" class="form-select form-select-lg bg-light fs-6"
+                                        aria-label=".form-select-lg example">
+                                        <option value=""> Tỉnh/Thành phố </option>
+                                        <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                                        <option value="Hà Nội">Hà Nội</option>
+                                        <option value="An Giang">An Giang</option>
+                                        <option value="Bà Rịa-Vũng Tàu">Bà Rịa-Vũng Tàu</option>
+                                        <option value="Bắc Kạn">Bắc Kạn</option>
+                                        <option value="Bắc Giang">Bắc Giang</option>
+                                        <option value="Bạc Liêu">Bạc Liêu</option>
+                                        <option value="Bắc Ninh">Bắc Ninh</option>
+                                        <option value="Bến Tre">Bến Tre</option>
+                                        <option value="Bình Định">Bình Định</option>
+                                        <option value="Bình Dương">Bình Dương</option>
+                                        <option value="Bình Phước">Bình Phước</option>
+                                        <option value="Bình Thuận">Bình Thuận</option>
+                                        <option value="Cà Mau">Cà Mau</option>
+                                        <option value="Cần Thơ">Cần Thơ</option>
+                                        <option value="Cao Bằng">Cao Bằng</option>
+                                        <option value="Đà Nẵng">Đà Nẵng</option>
+                                        <option value="Đắk Lắk">Đắk Lắk</option>
+                                        <option value="Đắk Nông">Đắk Nông</option>
+                                        <option value="Điện Biên">Điện Biên</option>
+                                        <option value="Đồng Nai">Đồng Nai</option>
+                                        <option value="Đồng Tháp">Đồng Tháp</option>
+                                        <option value="Gia Lai">Gia Lai</option>
+                                        <option value="Hà Giang">Hà Giang</option>
+                                        <option value="Hậu Giang">Hậu Giang</option>
+                                        <option value="Hà Nam">Hà Nam</option>
+                                        <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                        <option value="Hải Dương">Hải Dương</option>
+                                        <option value="Hải Phòng">Hải Phòng</option>
+                                        <option value="Hòa Bình">Hòa Bình</option>
+                                        <option value="Hưng Yên">Hưng Yên</option>
+                                        <option value="Khánh Hòa">Khánh Hòa</option>
+                                        <option value="Kiên Giang">Kiên Giang</option>
+                                        <option value="Kon Tum">Kon Tum</option>
+                                        <option value="Lai Châu">Lai Châu</option>
+                                        <option value="Lâm Đồng">Lâm Đồng</option>
+                                        <option value="Lạng Sơn">Lạng Sơn</option>
+                                        <option value="Lào Cai">Lào Cai</option>
+                                        <option value="Long An">Long An</option>
+                                        <option value="Nam Định">Nam Định</option>
+                                        <option value="Nghệ An">Nghệ An</option>
+                                        <option value="Ninh Bình">Ninh Bình</option>
+                                        <option value="Ninh Thuận">Ninh Thuận</option>
+                                        <option value="Phú Thọ">Phú Thọ</option>
+                                        <option value="Quảng Bình">Quảng Bình</option>
+                                        <option value="Quảng Nam">Quảng Nam</option>
+                                        <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                        <option value="Quảng Ninh">Quảng Ninh</option>
+                                        <option value="Quảng Trị">Quảng Trị</option>
+                                        <option value="Sóc Trăng">Sóc Trăng</option>
+                                        <option value="Sơn La">Sơn La</option>
+                                        <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                                        <option value="Tây Ninh">Tây Ninh</option>
+                                        <option value="Phú Yên">Phú Yên</option>
+                                        <option value="Thái Bình">Thái Bình</option>
+                                        <option value="Thái Nguyên">Thái Nguyên</option>
+                                        <option value="Thanh Hóa">Thanh Hóa</option>
+                                        <option value="Tiền Giang">Tiền Giang</option>
+                                        <option value="Trà Vinh">Trà Vinh</option>
+                                        <option value="Tuyên Quang">Tuyên Quang</option>
+                                        <option value="Vĩnh Long">Vĩnh Long</option>
+                                        <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                        <option value="Yên Bái">Yên Bái</option>
+
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="numberPhone" type="text"
+                                        class="form-control form-control-lg bg-light fs-6" placeholder="Số điện thoại">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <select id="get-list" class="form-select form-select-lg bg-light fs-6"
+                                        aria-label=".form-select-lg example">
+                                        <option value="0">Danh mục</option>
+                                        <option value="1">Xe đạp điện</option>
+                                        <option value="2">Bảo hành</option>
+                                        <option value="3">Sửa chữa</option>
+                                        <option value="4">Khác</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <textarea placeholder="Nội dung" class="form-control" name="contentContact"
+                                        id="contentContact" rows="3" required></textarea>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-lg btn-danger w-100 fs-6 ">Gửi</button>
+                                </div>
+                                <br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer border-top bg-secondary-subtle">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-3">
+                        <h4>Chăm sóc khách hàng</h4>
+                        <ul class="footer__content">
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Trung
+                                    tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Thanh Toán</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Vận Chuyển</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Trả Hàng & Hoàn Tiền</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Chính Sách Bảo Hành</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Về chúng tôi</h4>
+                        <ul class="footer__content">
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Trang chủ</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Giới thiệu</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Sản phẩm</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Tin mới nhất</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Câu hỏi thường gặp</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Chăm sóc khách hàng</h4>
+                        <ul class="footer__content">
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Trung
+                                    tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Thanh Toán</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Vận Chuyển</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Trả Hàng & Hoàn Tiền</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Chính Sách Bảo Hành</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Chăm sóc khách hàng</h4>
+                        <ul class="footer__content">
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Trung
+                                    tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Thanh Toán</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Vận Chuyển</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Trả Hàng & Hoàn Tiền</a>
+                            </li>
+                            <li class="footer__content-item list-unstyled my-3"><a href=""
+                                    class="text-decoration-none text-black">Chính Sách Bảo Hành</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <h3>Công ty Motohub Việt Nam</h3>
+                        <p class="m-0">Số GCNĐKDN: 2500150543</p>
+                        <p class="m-0">Đăng ký lần đầu: Ngày 26/6/2008</p>
+                        <p class="m-0"> Đăng ký thay đổi lần thứ 14: Ngày 03/4/2023.</p>
+                        <p class="m-0">Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở Kế hoạch và Đầu tư Vĩnh Phúc
+                            Địa chỉ: Phường Phúc Thắng, Thành Phố Phúc Yên, Tỉnh Vĩnh Phúc, Việt Nam</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>NHẬN TIN KHUYẾN MÃI</h3>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control p-3" placeholder="Nhập email của bạn"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="input-group-text bg-danger" id="basic-addon2">Đăng ký</button>
+                        </div>
+                        <div class="footer-icon">
+                            <a href="" class="fs-1 me-3 footer-icon-link"><i
+                                    class="fa-brands fa-square-facebook"></i></a>
+                            <a href="" class="fs-1 me-3 footer-icon-link"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="fs-1 me-3 text-danger footer-icon-link"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="" class="fs-1 me-3 footer-icon-link"> <i class="fa-brands fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row justify-content-md-around">
+                    <div class="col-md-6">
+                        <p>© 2023. Copyright by MotoHub VietNam</p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="me-3"><a href="">Terms and Conditions </a></span>
+                        <span class="me-3"><a href="">Privacy Policy </a></span>
+                        <span class="me-3"><a href="">Cookie Policy </a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+        <script src="./assets/javascript/scrip.js"></script>
+</body>
+
+</html>
